@@ -1,0 +1,32 @@
+8.1 20:56
+1、
+maven包导不进来
+原因：没有开始导入
+解决办法：右边maven，重新刷新一次
+2、
+resource报错
+原因：没有设置javax.annotation
+解决办法：pom.xml的dependencyManagement和dependencies加入
+<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>jsr250-api</artifactId>
+    <version>1.0</version>
+</dependency>
+
+8.2 12:22
+1.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'AllbookServiceImpl': Injection of resource dependencies
+failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'allbookMapper' defined in file
+[G:\workspace\hellossm\target\hellossm\WEB-INF\classes\panx\mapper\AllbookMapper.class]: Invocation of init method failed; nested exception is
+java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.
+BuilderException: Wrong namespace. Expected 'panx.mapper.AllbookMapper' but found 'panx.mapper.TestMapper'.
+原因：AllBookMapper.xml里面mapper指向错误
+解决办法：把panx.mapper.TestMapper改成panx.mapper.AllbookMapper
+2.
+Cause: java.sql.SQLSyntaxErrorException: ORA-00911: 无效字符
+原因：查询字符有错
+解决：把select * from `Allbook`改成select * from 'Allbook'
+3.
+Cause: java.sql.SQLSyntaxErrorException: ORA-00903: 表名无效
+原因：找不到表头
+解决：先去SQL Developer查了一次，发现是语句问题，改成select * from Allbook解决
