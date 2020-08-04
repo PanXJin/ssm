@@ -22,7 +22,7 @@ public class AllbookServiceImpl implements AllbookService{
     }
 
     @Override
-    public List<AllBook> GetAll() {
+    public List<AllBook> GetAllbook() {
         return allbookMapper.GetAllbook();
     }
 }

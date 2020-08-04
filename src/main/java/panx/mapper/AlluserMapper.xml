@@ -2,6 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="panx.mapper.AlluserMapper">
     <select id="GetAlluser" resultType="panx.entity.AllUser">
-        select * from AllUser
+        select * from Alluser
     </select>
 </mapper>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="panx.mapper.AllbookMapper">
-    <select id="GetAll" resultType="panx.entity.AllBook">
+    <select id="GetAllbook" resultType="panx.entity.AllBook">
         select * from Allbook
     </select>
 </mapper>

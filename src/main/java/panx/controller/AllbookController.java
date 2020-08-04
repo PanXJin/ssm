@@ -19,7 +19,17 @@ public class AllbookController {
     @RequestMapping("/GetAllbooks")
     public String test(HttpServletRequest request){
         System.out.println("来过");
-        List<AllBook> list = allbookService.GetAll();
+        List<AllBook> list = allbookService.GetAllbook();
+        for (AllBook arr:list) {
+            System.out.println(arr.getCodenum());
+        }
+        request.getSession().setAttribute("panxbooklist",list);
+        return "showbook";
+    }
+    @RequestMapping("/findbook")
+    public String findbook(HttpServletRequest request){
+        System.out.println("来过");
+        List<AllBook> list = allbookService.GetAllbook();
         for (AllBook arr:list) {
             System.out.println(arr.getCodenum());
         }

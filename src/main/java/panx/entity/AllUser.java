@@ -1,8 +1,8 @@
 package panx.entity;
 
 public class AllUser {
-    private Integer usernum;
-    private Integer password;
+    private String usernum;
+    private String password;
     private String username;
     private String nowbook;
     private String allbooknum;
@@ -16,19 +16,19 @@ public class AllUser {
         this.nowbook = nowbook;
     }
 
-    public Integer getUsernum() {
+    public String getUsernum() {
         return usernum;
     }
 
-    public void setUsernum(Integer usernum) {
+    public void setUsernum(String usernum) {
         this.usernum = usernum;
     }
 
-    public Integer getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(Integer password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
