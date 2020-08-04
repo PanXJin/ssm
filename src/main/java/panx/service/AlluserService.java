@@ -1,9 +1,10 @@
-package panx.mapper;
+package panx.service;
 
+import panx.entity.AllBook;
 import panx.entity.AllUser;
 
 import java.util.List;
 
-public interface AlluserMapper {
+public interface AlluserService {
     List<AllUser> GetAlluser();
 }

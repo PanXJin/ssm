@@ -23,7 +23,7 @@ public class AllbookController {
         for (AllBook arr:list) {
             System.out.println(arr.getCodenum());
         }
-        request.getSession().setAttribute("panxallbooklist",list);
-        return "show";
+        request.getSession().setAttribute("panxbooklist",list);
+        return "showbook";
     }
 }

@@ -1,6 +1,7 @@
 <html>
 <body>
 <h2 >Hello World!</h2>
-<a href="GetAll">all</a><br>
+<a href="GetAllbooks">allbooks</a><br>
+<a href="GetAlluser">alluser</a><br>
 </body>
 </html>

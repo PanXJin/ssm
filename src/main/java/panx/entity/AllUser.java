@@ -4,8 +4,17 @@ public class AllUser {
     private Integer usernum;
     private Integer password;
     private String username;
+    private String nowbook;
     private String allbooknum;
     private String gods;
+
+    public String getNowbook() {
+        return nowbook;
+    }
+
+    public void setNowbook(String nowbook) {
+        this.nowbook = nowbook;
+    }
 
     public Integer getUsernum() {
         return usernum;
