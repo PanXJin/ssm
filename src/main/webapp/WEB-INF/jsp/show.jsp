@@ -15,7 +15,7 @@
 </head>
 <body>
 <%
-    List<AllBook> list = (List<AllBook>) request.getSession().getAttribute("panxlist");
+    List<AllBook> list = (List<AllBook>) request.getSession().getAttribute("panxbooklist");
     for (AllBook arr : list) {
         if(arr.getIsin().equals("0")){
             arr.setIsin("是");

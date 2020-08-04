@@ -1,6 +1,6 @@
 <html>
 <body>
 <h2 >Hello World!</h2>
-<a href="GetAll">增删改查</a><br>
+<a href="GetAll">all</a><br>
 </body>
 </html>

@@ -5,5 +5,5 @@ import panx.entity.AllBook;
 import java.util.List;
 
 public interface AllbookMapper {
-    List<AllBook> GetAll();
+    List<AllBook> GetAllbook();
 }
