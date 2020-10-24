@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface AllbookService {
     List<AllBook> GetAllbook();
+    List<AllBook> Findbook(String codenum);
 }

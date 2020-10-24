@@ -25,4 +25,9 @@ public class AllbookServiceImpl implements AllbookService{
     public List<AllBook> GetAllbook() {
         return allbookMapper.GetAllbook();
     }
+
+    @Override
+    public List<AllBook> Findbook(String codenum) {
+        return null;
+    }
 }
