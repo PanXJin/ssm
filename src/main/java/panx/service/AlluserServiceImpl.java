@@ -2,7 +2,6 @@ package panx.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import panx.entity.AllBook;
 import panx.entity.AllUser;
 import panx.mapper.AlluserMapper;
 
@@ -25,17 +24,12 @@ public class AlluserServiceImpl implements AlluserService{
 
     @Override
     public List<AllUser> GetAlluser() {
-        return alluserMapper.GetAlluser();
+        return alluserMapper.getAlluser();
     }
 
     @Override
-    public boolean isLoginOK(String username, String password) {
-        //这里使用了最简单粗暴的方法，获取全部用户信息后再逐个进行对比
-        List<AllUser> list = GetAlluser();
-        for (AllUser arr:list) {
-            if(username.equals(arr.getUsernum())&&password.equals(arr.getPassword()))
-                return true;
-        }
-        return false;
+    public AllUser getUserData(String userName, String passWord) {
+        return alluserMapper.getUserData(userName, passWord);
     }
+
 }

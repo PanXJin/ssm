@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface AlluserService {
     List<AllUser> GetAlluser();
-    boolean isLoginOK(String username, String password);
+    AllUser getUserData(String userName,String passWord);
 }

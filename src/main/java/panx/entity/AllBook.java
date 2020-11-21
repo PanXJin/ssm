@@ -1,60 +1,106 @@
 package panx.entity;
 
-import java.util.Date;
-
 public class AllBook {
-    private Integer codenum;
-    private String bookname;
-    private String insite;
-    private String booknum;
-    private String isin;
-    private Date backtime;
 
-    public Integer getCodenum() {
-        return codenum;
-    }
+  private String bookcode;
+  private String bookname;
+  private String writer;
+  private String isbn;
+  private String publish;
+  private String searchcode;
+  private String totalbook;
+  private String freebook;
+  private String location;
+  private String publichdate;
 
-    public void setCodenum(Integer codenum) {
-        this.codenum = codenum;
-    }
 
-    public String getBookname() {
-        return bookname;
-    }
+  public String getBookcode() {
+    return bookcode;
+  }
 
-    public void setBookname(String bookname) {
-        this.bookname = bookname;
-    }
+  public void setBookcode(String bookcode) {
+    this.bookcode = bookcode;
+  }
 
-    public String getInsite() {
-        return insite;
-    }
 
-    public void setInsite(String insite) {
-        this.insite = insite;
-    }
+  public String getBookname() {
+    return bookname;
+  }
 
-    public String getBooknum() {
-        return booknum;
-    }
+  public void setBookname(String bookname) {
+    this.bookname = bookname;
+  }
 
-    public void setBooknum(String booknum) {
-        this.booknum = booknum;
-    }
 
-    public String getIsin() {
-        return isin;
-    }
+  public String getWriter() {
+    return writer;
+  }
 
-    public void setIsin(String isin) {
-        this.isin = isin;
-    }
+  public void setWriter(String writer) {
+    this.writer = writer;
+  }
 
-    public Date getBacktime() {
-        return backtime;
-    }
 
-    public void setBacktime(Date backtime) {
-        this.backtime = backtime;
-    }
+  public String getIsbn() {
+    return isbn;
+  }
+
+  public void setIsbn(String isbn) {
+    this.isbn = isbn;
+  }
+
+
+  public String getPublish() {
+    return publish;
+  }
+
+  public void setPublish(String publish) {
+    this.publish = publish;
+  }
+
+
+  public String getSearchcode() {
+    return searchcode;
+  }
+
+  public void setSearchcode(String searchcode) {
+    this.searchcode = searchcode;
+  }
+
+
+  public String getTotalbook() {
+    return totalbook;
+  }
+
+  public void setTotalbook(String totalbook) {
+    this.totalbook = totalbook;
+  }
+
+
+  public String getFreebook() {
+    return freebook;
+  }
+
+  public void setFreebook(String freebook) {
+    this.freebook = freebook;
+  }
+
+
+  public String getLocation() {
+    return location;
+  }
+
+  public void setLocation(String location) {
+    this.location = location;
+  }
+
+
+  public String getPublichdate() {
+    return publichdate;
+  }
+
+  public void setPublichdate(String publichdate) {
+    this.publichdate = publichdate;
+  }
+
 }
