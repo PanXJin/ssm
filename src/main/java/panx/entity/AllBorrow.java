@@ -4,9 +4,10 @@ package panx.entity;
 public class AllBorrow {
 
   private String borrowid;
-  private String bookid;
+  private String bookcode;
   private String borrowdate;
   private String recdate;
+  private String bookname;
 
 
   public String getBorrowid() {
@@ -18,12 +19,12 @@ public class AllBorrow {
   }
 
 
-  public String getBookid() {
-    return bookid;
+  public String getBookcode() {
+    return bookcode;
   }
 
-  public void setBookid(String bookid) {
-    this.bookid = bookid;
+  public void setBookcode(String bookcode) {
+    this.bookcode = bookcode;
   }
 
 
@@ -42,6 +43,15 @@ public class AllBorrow {
 
   public void setRecdate(String recdate) {
     this.recdate = recdate;
+  }
+
+
+  public String getBookname() {
+    return bookname;
+  }
+
+  public void setBookname(String bookname) {
+    this.bookname = bookname;
   }
 
 }

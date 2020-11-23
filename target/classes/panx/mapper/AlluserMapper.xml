@@ -4,4 +4,7 @@
     <select id="GetAlluser" resultType="panx.entity.AllUser">
         select * from Alluser
     </select>
+    <select id="getUserData" resultType="panx.entity.AllUser">
+        select * from Alluser where USERNAME = #{userName,jdbcType=VARCHAR2} and PASSWORD = #{passWord,jdbcType=VARCHAR2}
+    </select>
 </mapper>

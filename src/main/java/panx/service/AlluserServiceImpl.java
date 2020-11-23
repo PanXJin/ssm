@@ -32,4 +32,14 @@ public class AlluserServiceImpl implements AlluserService{
         return alluserMapper.getUserData(userName, passWord);
     }
 
+    @Override
+    public void setToken(String Token,String userId) {
+        alluserMapper.setToken(Token,userId);
+    }
+
+    @Override
+    public boolean register(String userId, String userName, String psw, String name, String token) {
+        return alluserMapper.register(userId,userName,psw,name,token);
+    }
+
 }

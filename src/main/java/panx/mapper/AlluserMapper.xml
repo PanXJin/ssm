@@ -7,4 +7,11 @@
     <select id="getUserData" resultType="panx.entity.AllUser">
         select * from Alluser where USERNAME = #{userName,jdbcType=VARCHAR2} and PASSWORD = #{passWord,jdbcType=VARCHAR2}
     </select>
+    <insert id="register" parameterType="panx.entity.AllUser">
+        insert into AllUser(#{userId,jdbcType=VARCHAR2},#{userName,jdbcType=VARCHAR2},#{password,jdbcType=VARCHAR2},#{name,jdbcType=VARCHAR2},#{token,jdbcType=VARCHAR2})
+        select USERID,USERNAME,PASSWORD,NAME,TOKEN
+    </insert>
+    <update id="setToken" parameterType="panx.entity.AllUser">
+        update AllUser set TOKEN=#{token} where USERID=#{userId};
+    </update>
 </mapper>
